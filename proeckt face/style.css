@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+    overflow: hidden;
+    background-color: linear-gradient(135deg,#ffe8ec 0%,#c3cfe2 100%);
+    touch-action: none;
+}
+canvas{
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    box-shadow: 0 15px 30px cyan;
+    transition: box-shadow 0.5s ease-in;
+}
+
+canvas:hover{
+    box-shadow: 0 20px 50px;
+}
+@keyframes stretchEffect {
+    0%{transform: scale(1);}
+    50%{transform: scale(1.08);}
+    100%{transform: scale(1);}
+}
